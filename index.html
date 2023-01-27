@@ -1,0 +1,235 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--Este se necesita par ael aos aos animation-->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--Este se necesita par ael aos aos animation-->
+    <script>
+        AOS.init();
+      </script>
+    <header>
+        <nav class="navbar"><!--A hash - `#` within a hyperlink specifies an HTML element id to which the window should be scrolled.-->
+            <a href="#"><img src="logo.png" class="brand"/><!--aqui debe ir un logo--></a>
+            <ul>
+               <li><a href="#">Model S</a></li> 
+               <li><a href="#">Model 3</a></li> 
+               <li><a href="#">Model X</a></li> 
+               <li><a href="#">Model Y</a></li> 
+               <li><a href="#">Solar Roof</a></li> 
+               <li><a href="#">Solar Panels</a></li> 
+            </ul>
+
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>
+                <li><span class="menu-btn">Menu</span></li>
+            </ul>
+
+            <span class="menu-btn-mobile">Menu</span>
+        </nav>
+
+        <nav class="sidebar">
+            <div class="close-btn">
+                <span class="material-symbols-outlined">close</span><!-- con este se supone que sale una x de cerrar pero no se si me hace falta algo-->
+            </div>
+            <ul>
+                <li><a href="#">Model S</a></li>
+                <li><a href="#">Model 3</a></li>
+                <li><a href="#">Model X</a></li>
+                <li><a href="#">Model Y</a></li>
+                <li><a href="#">Solar Roof</a></li>
+                <li><a href="#">Solar Panels</a></li>
+                <li><a href="#">Existing Inventory</a></li>
+                <li><a href="#">Used Inventory</a></li>
+                <li><a href="#">Trade-In</a></li>
+                <li><a href="#">Test Drive</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Powerwall</a></li>
+                <li><a href="#">Commercial Energy</a></li>
+                <li><a href="#">Utilities</a></li>
+                <li><a href="#">Charging</a></li>
+                <li><a href="#">Find Us</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-backdrop"></div>
+        
+        <div class="header-body">
+                <h1 class="title">Cuyo Garage</h1>
+                <div class="wrap">
+                    <p>The best car in the world is the one,on that Smallville scene.</p>
+                    <div class="stats">
+                        <div>
+                            <div class="gauge">
+                                <img src="speedometer.png"/>
+                                <h2>1.9<span>s</span></h2>
+                            </div><!--DIV GAUGE-->
+                            <div><small>0-60 mph</small></div>
+                        </div> 
+                    
+                        <div>
+                            <div>
+                                <h2><span>+</span>250<span>mph</span></h2>
+                            </div>
+                            <div>
+                                <small>Top Speed</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <h2>620<span>s</span></h2>
+                            </div>
+                            <div>
+                                <small>Range</small>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Reserve Now</a>
+                    </div>
+
+                    <a href="#" class="btn btn-mobile">Reserve Now</a>
+                    <a href="#video"><img src="arrow.png" class="arrow"/></a>
+                </div>
+        </div>
+        
+    </header>   
+    <!--Header ENDS--> 
+
+
+</body>
+
+
+<!--BODY SECTION-->
+<section id="video">
+    <!--<iframe 
+        src="https://www.youtube.com/watch?v=VY-M0CrBRKM"
+        style="top:0;left:0;width:100%;height:100%;"
+        autoplay 
+        muted loop 
+        data-aos="fade-up" 
+        data-aos-duration="1200">
+        
+    </iframe>
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+    <iframe 
+        width="100%" 
+        height="315" 
+        src="https://www.youtube.com/embed/X08NNJthZ3M" 
+        title="YouTube video player"
+        autoplay 
+        muted loop 
+        data-aos="fade-up" 
+        data-aos-duration="1200"
+        frameborder="0" 
+         
+        allowfullscreen>
+    </iframe>
+</section>
+
+<section class="specs">
+    <ul>
+        <li><span>Base Specs</span></li>
+        <li><span>Acceleration 0-60 mph</span><span>1.9s</span></li>
+        <li><span>Acceleration 0-100 mph</span><span>4.2s</span></li>
+        <li><span>Acceleration 1/4</span><span>8.8s</span></li>
+        <li><span>Top Speed</span><span>Over 250mph</span></li>
+        <li><span>Wheel Torque</span><span>10,000 Nm</span></li>
+        <li><span>Mile Range</span><span>620 miles</span></li>
+        <li><span>Seating</span><span>4</span></li>
+        <li><span>Drive</span><span>All-Wheel-Drive</span></li>
+        <li><span>Base Reservation</span><span>$50,000</span></li>
+    </ul>
+</section>
+
+<section class="about">
+    <img src="back.jpeg"
+    data-aos="fade-up"
+    data-aos-duration="1200"/>
+
+    <div class="about-text">
+        <h2> Designed for performance and Aero Efficiency</h2>
+        <p>
+            As an all-electric supercar,
+            Roadster maximizes the 
+            potential of aerodynamic
+            engineering-with performance and Efficiency.
+        </p>
+    </div>
+</section>
+
+<section class="interior-test">
+    <img class="interior-image"
+        src="interior.jpeg"
+        data-aos="fade-up"
+        data-aos-duration="1200">
+        <div>
+            <h2>Interior</h2>
+            <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        </div>
+</section>
+
+<section class="roof">
+    <div 
+        class="banner-img"
+        data-aos="fade-up"
+        data-aos-duration="1200">
+    </div>
+    <div class="roof-text">
+        <h2>Glass Roof</h2>
+        <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        </p>
+    </div>
+</section>
+
+<!--ADDING A TY VIDEO-->
+<section class="iframe-video">
+    <div
+        style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+            src=""
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <div class="action">
+        <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit... </p>
+        <span class="line"></span>
+        <a href="#" class="btn">Reserve Now</a>
+        <a href="#" class="btn">Get Newsletter</a>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <ul>
+        <li><a href="#">&copy; 2022</a></li>
+        <li><a href="#">Privacy &amp; legal</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">locations</a></li>
+    </ul>
+</footer>
+<script src="main.js"></script>
+</html>
